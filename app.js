@@ -12,7 +12,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://admin-dinuka:rahula2017@cluster0.htrvz.mongodb.net/toDoListDB?retryWrites=true&w=majority",{useNewUrlParser:true ,useUnifiedTopology: true});
+mongoose.connect("Your mongo link",{useNewUrlParser:true ,useUnifiedTopology: true});
 
 //to remove deprecated warning whwn use findoneandupdate(from stackoverflow)
 mongoose.set('useFindAndModify', false);
